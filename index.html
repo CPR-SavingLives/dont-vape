@@ -3,97 +3,147 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Don't Vape Your Life Away</title>
+  <title>Breathe Free | Don't Vape Your Life Away</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <!-- Navigation -->
+  <!-- Top Announcement Bar -->
+  <div class="announcement-bar">
+    <span>📢 Join the Movement for Smoke-Free & Vape-Free Youth Communities</span>
+  </div>
+
+  <!-- Header Navigation -->
   <header>
     <nav class="navbar">
-      <div class="logo">Breathe Free</div>
+      <div class="logo">
+        <span class="logo-icon">🫁</span> Breathe Free
+      </div>
       <ul class="nav-links">
-        <li><a href="#home" class="nav-item active">Home</a></li>
-        <li><a href="#register" class="nav-item">Register</a></li>
-        <li><a href="#about" class="nav-item">About Me</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#mission">Why Quit</a></li>
+        <li><a href="#about">About Rahul</a></li>
+        <li><a href="#register" class="nav-cta">Register Now</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- Main Content Container -->
   <main>
-    
-    <!-- PAGE 1: HOME PAGE -->
-    <section id="home" class="page-section active">
-      <div class="hero">
-        <h1>Don't Vape Your Life Away</h1>
-        <p class="tagline">Protect your lungs, take control of your future, and clear the air.</p>
-        <a href="#register" class="btn btn-primary nav-trigger">Register Here</a>
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+      <div class="hero-container">
+        <span class="badge">Community Health Initiative</span>
+        <h1>Don't Vape Your<br><span class="highlight">Life Away</span></h1>
+        <p class="hero-subtext">Protect your lungs, take control of your health, and help build a vape-free future for our youth.</p>
+        <div class="hero-buttons">
+          <a href="#register" class="btn btn-primary">Register for Free Resources</a>
+          <a href="#about" class="btn btn-secondary">Meet the Founder</a>
+        </div>
       </div>
+    </section>
 
-      <div class="content-container">
-        <h2>Why Quitting Matters</h2>
-        <p>Vaping might seem like a harmless alternative, but it exposes your lungs to toxic chemicals, nicotine addiction, and long-term health hazards. Taking the step to quit or helping your friends quit is the strongest choice you can make for your health.</p>
+    <!-- Key Stats Banner -->
+    <section class="stats-banner">
+      <div class="stats-container">
+        <div class="stat-item">
+          <span class="stat-number">1 in 20</span>
+          <span class="stat-label">American adults use e-cigarettes regularly</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">99%</span>
+          <span class="stat-label">Of e-cigarettes sold in the US contain nicotine</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">100%</span>
+          <span class="stat-label">Preventable health risk for youth & young adults</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mission / Why Quit Section -->
+    <section id="mission" class="section-padding">
+      <div class="container">
+        <div class="section-header">
+          <h2>Why Quitting Matters</h2>
+          <p>Taking back control of your air is the single best decision for your mind and body.</p>
+        </div>
 
         <div class="grid-cards">
-          <div class="card">
-            <h3>Health Benefits</h3>
-            <p>Your lung capacity and blood circulation start to improve within weeks of stopping nicotine intake.</p>
+          <div class="feature-card">
+            <div class="card-icon">🫀</div>
+            <h3>Cardiovascular Health</h3>
+            <p>Nicotine increases heart rate and blood pressure. Quitting allows your circulatory system to stabilize and reduces strain on your heart.</p>
           </div>
-          <div class="card">
-            <h3>Mental Freedom</h3>
-            <p>Break free from the dependency cycle and gain focus, emotional balance, and control over your daily life.</p>
+          <div class="feature-card">
+            <div class="card-icon">🌬️</div>
+            <h3>Clear Lung Capacity</h3>
+            <p>Vaping exposes lungs to toxic chemical flavorings and heavy metals. Within weeks of quitting, lung function and ease of breathing improve.</p>
           </div>
-          <div class="card">
-            <h3>Community Support</h3>
-            <p>You don't have to do it alone. Join our local peer support group and get resources to help you or loved ones quit.</p>
+          <div class="feature-card">
+            <div class="card-icon">🧠</div>
+            <h3>Mental Clarity</h3>
+            <p>Break the cycle of nicotine spikes and crashes. Gain consistent focus, better sleep, and genuine emotional balance.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- PAGE 2: REGISTER PAGE -->
-    <section id="register" class="page-section">
-      <div class="content-container form-container">
-        <h2>Register for Resources & Support</h2>
-        <p>Fill out the form below to receive quitting guides, workshop alerts, and local support updates.</p>
-
-        <!-- Replace YOUR_FORM_ENDPOINT with a service like Formspree or Netlify Forms -->
-        <form id="registration-form" action="#" method="POST">
-          <div class="form-group">
-            <label for="name">Full Name</label>
-            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+    <!-- Registration Section -->
+    <section id="register" class="section-padding bg-alt">
+      <div class="container">
+        <div class="form-wrapper">
+          <div class="form-info">
+            <h2>Join the Breathe Free Campaign</h2>
+            <p>Register below to receive free anti-vaping resources, community workshop alerts, and support guides directly in your inbox.</p>
+            <ul class="info-list">
+              <li>✓ Free downloadable quit guides</li>
+              <li>✓ Updates on local community health seminars</li>
+              <li>✓ Peer support and youth leadership opportunities</li>
+            </ul>
           </div>
 
-          <div class="form-group">
-            <label for="email">Email Address</label>
-            <input type="email" id="email" name="email" placeholder="Enter your email address" required>
-          </div>
+          <div class="form-card">
+            <h3>Get Registered</h3>
+            <form id="registration-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+              <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Rahul Thakkar" required>
+              </div>
 
-          <button type="submit" class="btn btn-submit">Submit Registration</button>
-        </form>
-        <div id="form-response" class="hidden-message">Thank you for registering! We will be in touch soon.</div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="_replyto" placeholder="name@example.com" required>
+              </div>
+
+              <button type="submit" class="btn btn-submit">Submit Registration</button>
+            </form>
+            <div id="form-response" class="hidden-message">Thank you for registering! We will be in touch soon.</div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <!-- PAGE 3: ABOUT ME PAGE -->
-    <section id="about" class="page-section">
-      <div class="content-container">
-        <h2>About Me</h2>
-        <div class="about-card">
-          <h3>Rahul Thakkar</h3>
-          <p class="subtitle">High School Student & Rising Junior</p>
-          
-          <p>Hi, I'm Rahul Thakkar. As a high school student, I see firsthand how vaping impacts the people around me. My goal is to empower our community to <strong>breathe free</strong> by raising awareness about the reality of vaping and providing actionable health resources.</p>
-          
-          <p>I believe everyone deserves a healthy, clean environment and the knowledge to take charge of their well-being.</p>
-
-          <div class="link-box">
-            <h4>Community Health Initiatives</h4>
-            <p>Beyond anti-vaping awareness, I also conduct CPR, First Aid, and AED Seminars to help build safer communities.</p>
-            <a href="https://cpr-savinglives.github.io/cpr-seminar/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
-              Check Out My CPR & First Aid Seminars &rarr;
-            </a>
+    <!-- About Section -->
+    <section id="about" class="section-padding">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-text">
+            <span class="badge">About The Founder</span>
+            <h2>Hi, I'm Rahul Thakkar</h2>
+            <p class="lead-text">High School Student & Rising Junior</p>
+            <p>As a high school student, I see every day how widespread vaping has become among youth and how it impacts health, focus, and athletic performance. I started the <strong>Breathe Free</strong> initiative to give peers factual resources and strong community support to make informed choices.</p>
+            <p>My goal is simple: to advocate for clean air, healthy choices, and a community where everyone has the opportunity to thrive without dependency.</p>
+            
+            <div class="cross-promo-card">
+              <h4>CPR, First Aid & AED Seminars</h4>
+              <p>In addition to anti-vaping awareness, I lead free public seminars on lifesaving CPR and AED techniques.</p>
+              <a href="https://cpr-savinglives.github.io/cpr-seminar/" target="_blank" rel="noopener noreferrer" class="link-button">
+                Visit CPR Seminar Site &rarr;
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -102,7 +152,10 @@
   </main>
 
   <footer>
-    <p>&copy; 2026 Rahul Thakkar • Breathe Free Campaign</p>
+    <div class="container footer-content">
+      <p>&copy; 2026 Rahul Thakkar • Breathe Free Youth Initiative</p>
+      <p class="footer-sub">Dedicated to community health and emergency preparedness.</p>
+    </div>
   </footer>
 
   <script src="script.js"></script>
